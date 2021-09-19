@@ -11,25 +11,31 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+	
+	<?php m3_post_thumbnail(); ?>
+	
+	<?php if (is_singular('post')) {
+		printf('<div class="entry-meta">');
+		$categories_list = get_the_category_list( esc_html__( ', ', 'm3' ) );
+		if ( $categories_list ) {
+			/* translators: 1: list of categories. */
+			printf( '<span class="cat-links">' . esc_html__( '%1$s', 'm3' ) . '</span> • ', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			}
+		m3_posted_on(); printf(' • '); m3_posted_by();
+		printf('</div>');
+	}
+	?>
+
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+			m3_posted_on(); printf(' • '); m3_posted_by();
+		endif; ?>
 
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				m3_posted_on();
-				m3_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
+
 	</header><!-- .entry-header -->
-
-	<?php m3_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php

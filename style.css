@@ -484,10 +484,28 @@ figcaption {
 }
 
 figcaption:before {
-	content: "âž¥	";
+	content: "⮩ ";
 }
 
 /* Specific exceptions */
+
+h1.site-title {
+	display: inline-block;
+	font-size: 1.2em;
+	margin-left: 0.2em;
+}
+
+p.site-title {
+	display: inline-block;
+	font-size: 1.2em;
+	margin-left: 0.2em;
+	font-weight: bold;
+}
+
+header#masthead {
+	font-family: "IBM Plex Mono", monospace;
+	padding: 15px;
+}
 
 .entry-title {
 	/* post titles */
@@ -594,6 +612,14 @@ a:active {
 	outline: 0;
 }
 
+.site-header a, .site-header a:visited {
+	color: #fff;
+}
+
+.site-header a:hover, .site-header a:active, .site-header a:focus {
+	color: #000;
+}
+
 /* Forms
 --------------------------------------------- */
 button,
@@ -680,6 +706,26 @@ textarea {
 # Layouts
 --------------------------------------------------------------*/
 
+/* header */
+
+div.site-branding {
+	display:inline;
+}
+
+img#site_logo_arrows {
+	display: inline-block;
+	filter: invert(1);
+	max-width: 1.2em;
+}
+
+p.site-title, p.site-description {
+	display:inline-block;
+}
+
+p.site-description {overflow: hidden;}
+
+/* article */
+
 article {
 	max-width: 1000px;
 	margin: auto !important /* be sure to remove !important later */;
@@ -697,6 +743,18 @@ div#comments {
 	margin: auto;
 }
 
+/* Footer */
+
+footer.site-footer {
+	background-color: #222;
+	font-family: "IBM Plex Mono", monospace;
+}
+
+img#footer_arrows {
+	filter: invert(1);
+	max-height: 1cm;
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -704,8 +762,8 @@ div#comments {
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
-	display: block;
-	width: 100%;
+	display: inline-block;
+	float: right;
 }
 
 .main-navigation ul {
@@ -769,6 +827,8 @@ div#comments {
 		display: flex;
 	}
 }
+
+
 
 .site-main .comment-navigation,
 .site-main
