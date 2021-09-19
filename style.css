@@ -418,6 +418,14 @@ h6 {
 	clear: both;
 }
 
+h1.entry-title {
+	text-align: center;
+}
+
+.entry-meta {
+	text-align: center;
+}
+
 p {
 	margin-bottom: 1.5em;
 }
@@ -478,6 +486,19 @@ figcaption {
 figcaption:before {
 	content: "âž¥	";
 }
+
+/* Specific exceptions */
+
+.entry-title {
+	/* post titles */
+	font-family: "IBM Plex Serif", serif;
+}
+
+.entry-meta {
+	/* post metadata */
+	font-family: "IBM Plex Mono", monospace;
+}
+
 
 /* Elements
 --------------------------------------------- */
@@ -666,6 +687,14 @@ article {
 
 article > * > p {
 	text-align: justify;
+}
+
+
+/* Comments */
+
+div#comments {
+	max-width: 800px;
+	margin: auto;
 }
 
 /*--------------------------------------------------------------
