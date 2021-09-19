@@ -66,7 +66,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-html {
+ html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
 }
@@ -403,7 +403,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: "IBM Plex Serif", serif;
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -414,6 +414,7 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: "IBM Plex Mono", monospace;
 	clear: both;
 }
 
@@ -450,7 +451,7 @@ code,
 kbd,
 tt,
 var {
-	font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-family: "IBM Plex Mono", monospace;
 }
 
 abbr,
@@ -469,14 +470,29 @@ big {
 	font-size: 125%;
 }
 
+figcaption {
+	font-size: 0.75em; 
+	color: #dedede;
+}
+
+figcaption:before {
+	content: "âž¥	";
+}
+
 /* Elements
 --------------------------------------------- */
 body {
-	background: #fff;
+	background: #010101;
+	color: #fff;
+}
+
+header#masthead {
+	color: #fff;
+	background-color: #d2353e;
 }
 
 hr {
-	background-color: #ccc;
+	background-color: #d2353e;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
@@ -525,6 +541,7 @@ figure {
 	margin: 1em 0;
 }
 
+
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
@@ -533,17 +550,18 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: #d2353e;
 }
 
 a:visited {
-	color: #800080;
+	color: #d2353e;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #191970;
+	color: #fff;
+	background-color: #d2353e;
 }
 
 a:focus {
@@ -640,6 +658,15 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+
+article {
+	max-width: 1000px;
+	margin: auto !important /* be sure to remove !important later */;
+}
+
+article > * > p {
+	text-align: justify;
+}
 
 /*--------------------------------------------------------------
 # Components
