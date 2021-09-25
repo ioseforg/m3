@@ -111,7 +111,7 @@ hr {
 }
 
 hr.wp-block-separator {
-	border:0;
+	border: 0;
 }
 
 /**
@@ -488,7 +488,7 @@ figcaption {
 }
 
 figcaption:before {
-	content: "⮩ ";
+	content: "↳";
 }
 
 /* Specific exceptions */
@@ -710,6 +710,11 @@ textarea {
 # Layouts
 --------------------------------------------------------------*/
 
+.site-main {
+	max-width: 95vw;
+	margin: auto;
+}
+
 /* header */
 
 div.site-branding {
@@ -724,6 +729,28 @@ img#site_logo_arrows {
 
 p.site-title, p.site-description {
 	display:inline-block;
+}
+
+ul#primary-menu > li {
+	margin: 0.4em;
+}
+
+/* homepage */
+.home-social-buttons {
+	font-family: "IBM Plex Mono", monospace;
+}
+
+.home-feed {
+	margin-left: 0;
+}
+
+.home-feed > .wp-block-post-template {
+	margin-left: 0;
+}
+
+.black-wp-button {
+	border: #fff solid;
+	border-radius: 9999px;
 }
 
 /* article */
@@ -748,8 +775,11 @@ div#comments {
 /* Footer */
 
 footer.site-footer {
-	background-color: #222;
+	border-top: 4px solid #d2353e;
 	font-family: "IBM Plex Mono", monospace;
+	font-size: 9pt;
+	text-align: center;
+	padding: 15px;
 }
 
 img#footer_arrows {
@@ -766,6 +796,8 @@ img#footer_arrows {
 .main-navigation {
 	display: inline-block;
 	float: right;
+	vertical-align: middle;
+	margin: 16px 0px 24px;
 }
 
 .main-navigation ul {
@@ -819,9 +851,15 @@ img#footer_arrows {
 	display: block;
 }
 
+
+
 @media screen and (min-width: 37.5em) {
 
 	.menu-toggle {
+		display: none;
+	}
+
+	.site-description {
 		display: none;
 	}
 
@@ -829,8 +867,6 @@ img#footer_arrows {
 		display: flex;
 	}
 }
-
-
 
 .site-main .comment-navigation,
 .site-main

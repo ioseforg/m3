@@ -12,7 +12,8 @@ The theme should work as is, but you should note that m3 was built specifically 
 2. You will need to change the footer text to reflect your own information and icons.
 3. If you wish to use a custom logo, you will need to uncomment the function for it in [header.php](/header.php).
 
+In some older versions of this repo, the IBM Plex web fonts are commented out. 
+
 ## Credits
 - The codebase for this theme is largely based on [_s (Underscores)](https://underscores.me) by Automattic and contributers (GPL2+)
-- Much of the dsi
 - The code for automatically resizing responsive video embeds was taken from [Lovecraft by Anders Noren (GPL2)](https://andersnoren.se/teman/lovecraft-wordpress-theme/).
