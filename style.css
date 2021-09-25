@@ -110,6 +110,10 @@ hr {
 	overflow: visible;
 }
 
+hr.wp-block-separator {
+	border:0;
+}
+
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -721,8 +725,6 @@ img#site_logo_arrows {
 p.site-title, p.site-description {
 	display:inline-block;
 }
-
-p.site-description {overflow: hidden;}
 
 /* article */
 
