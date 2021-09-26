@@ -735,6 +735,13 @@ ul#primary-menu > li {
 	margin: 0.4em;
 }
 
+button.menu-toggle {
+	background-color: #d2353e;
+	color: #fff;
+	border: 2px solid #fff;
+	font-family: "IBM Plex Mono", monospace;
+}
+
 /* homepage */
 .home-social-buttons {
 	font-family: "IBM Plex Mono", monospace;
@@ -853,20 +860,18 @@ img#footer_arrows {
 
 
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 800px) {
 
 	.menu-toggle {
 		display: none;
 	}
 
-	.site-description {
-		display: none;
-	}
 
 	.main-navigation ul {
 		display: flex;
 	}
 }
+
 
 .site-main .comment-navigation,
 .site-main

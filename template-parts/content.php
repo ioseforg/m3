@@ -12,7 +12,10 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 	
-	<?php m3_post_thumbnail(); ?>
+	<?php if (is_singular('post') and get_post_meta(get_the_ID(), "video_post", true) == "true") {
+		echo '<div class=videoContainer><iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/' . get_post_meta(get_the_ID(), "video_post_src", true) . '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
+	}
+	else {m3_post_thumbnail();} ?>
 	
 	<?php if (is_singular('post')) {
 		printf('<div class="entry-meta">');
