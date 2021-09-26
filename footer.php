@@ -11,7 +11,7 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
+<footer id="colophon" class="site-footer">
 		<div class="site-info">
 			<img id="footer_arrows" src='<?php bloginfo("stylesheet_directory"); ?>/inc/arrows.png'/>
 			<p>iosef.org © 2017 — <?php echo(date("Y")); ?> Joseph Mann</p>

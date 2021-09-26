@@ -13,9 +13,8 @@
 	<header class="entry-header">
 	
 	<?php if (is_singular('post') and get_post_meta(get_the_ID(), "video_post", true) == "true") {
-		echo '<div class=videoContainer><iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/' . get_post_meta(get_the_ID(), "video_post_src", true) . '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
-	}
-	else {m3_post_thumbnail();} ?>
+		echo '<div id=videoContainer><iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/' . get_post_meta(get_the_ID(), "video_post_src", true) . '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'."<script>$.getJSON('https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=". get_post_meta(get_the_ID(), "video_post_src", true) . "&format=json', function(data){ var aspectratio = data.height / data.width; var padding = String(aspectratio * 100) + '%'; document.getElementById('videoContainer').style.paddingBottom = padding;});</script>";
+	} else {m3_post_thumbnail();} ?>
 	
 	<?php if (is_singular('post')) {
 		printf('<div class="entry-meta">');
