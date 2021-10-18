@@ -780,6 +780,7 @@ article > * > p {
 #videoContainer {
   position: relative;
   height: 0;
+  z-index: -1;
 }
 
 #videoContainer iframe {
@@ -867,14 +868,19 @@ img#footer_arrows {
 
 .main-navigation a {
 	display: block;
-	text-decoration: none;
+	text-decoration: underline;
+	font-weight: bold;
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+.menu-toggle {
 	display: block;
 	float: right;
+}
+
+.main-navigation.toggled ul {
+	background-color: #d2353e;
+	width: 100%;
 }
 
 
