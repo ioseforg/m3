@@ -15,5 +15,6 @@ The theme should work as is, but you should note that m3 was built specifically 
 In some older versions of this repo, the IBM Plex web fonts are commented out. 
 
 ## Credits
-- The codebase for this theme is largely based on [_s (Underscores)](https://underscores.me) by Automattic and contributers (GPL2+)
-- The code for automatically resizing responsive video embeds was taken from [Lovecraft by Anders Noren (GPL2)](https://andersnoren.se/teman/lovecraft-wordpress-theme/).
+- Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+- normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2018 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
+- FitVids https://github.com/davatron5000/FitVids.js, (c) 2017 Chris Coyier and Dave Rupert, [WTFPL](http://www.wtfpl.net/)

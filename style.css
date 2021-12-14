@@ -821,7 +821,7 @@ img#footer_arrows {
 --------------------------------------------- */
 .main-navigation {
 	display: inline-block;
-	float: right;
+	/* float: right; */
 	vertical-align: middle;
 	margin: 16px 0px 24px;
 }
