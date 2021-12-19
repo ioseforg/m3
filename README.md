@@ -6,13 +6,21 @@ Hi, this repo only exists because the GPLv2 says I have to give you the source c
 
 If for whatever reason you would actually like to use this filth:
 
-The theme should work as is, but you should note that m3 was built specifically for my blog, [iosef.org](https://iosef.org/), and some of the code in this theme is tailored around that website. These site-specific hardcoded options have not yet been converted to Wordpress Admin settings variables and you may need to make site specific changes to this theme if you wish to use it (unless you're trying to impersonate my blog, in which case pls don't 😢).
+The theme should work as is, but you should note that m3 was built specifically for my blog, [iosef.org](https://iosef.org/), and some of the code in this theme is tailored around that website. These site-specific hardcoded options have not yet been converted to Wordpress Admin settings variables and you may need to make site specific changes to this theme if you wish to use it (unless you're trying to impersonate my blog, in which case pls don't 😢). 
+
+This theme is designed to be used on a website that is loaded statically using the [Simply Static](https://wordpress.org/plugins/simply-static/) extension. As such, you will need to enable things such the comment form which have been disabled.
 
 1. You will need to add an square black icon to the root folder of the theme to appear next to the site title.
 2. You will need to change the footer text to reflect your own information and icons.
 3. If you wish to use a custom logo, you will need to uncomment the function for it in [header.php](/header.php).
+4. You may wish to to re-enable dynamic features, such as comments.
 
 In some older versions of this repo, the IBM Plex web fonts are commented out. 
+
+## Features
+
+### Video layouts
+You can enable a special post layout for YouTube video posts by setting the custom field value for `video_post` to `true` and setting the value for `video_post_src` to the Video ID of a YouTube post. It will embed in privacy-enhanced mode.
 
 ## Credits
 - Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
