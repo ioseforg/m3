@@ -820,9 +820,8 @@ img#footer_arrows {
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
-	display: inline-block;
-	/* float: right; */
-	vertical-align: middle;
+	display: block;
+	float: right;
 	margin: 16px 0px 24px;
 }
 
