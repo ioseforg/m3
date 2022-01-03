@@ -16,7 +16,7 @@
 			<img width=30 height=30 id="footer_arrows" src='<?php bloginfo("stylesheet_directory"); ?>/inc/arrows.png'/>
 			<p>iosef.org © 2017 — <?php echo(date("Y")); ?> Joseph Mann</p>
 			<p><a href="<?php bloginfo('rss2_url')?>">RSS Feed</a></p>
-			<p class="footer_fineprint">By using iosef.org, you agree to the use of tracking cookies by third-parties to serve advertisements and to the <a href="https://iosef.org/terms.html">Terms of Use</a>, including the <a href="https://iosef.org/terms.html#privacy">privacy policy</a>. This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</span>
+			<p class="footer_fineprint">By using iosef.org, you agree to the use of tracking cookies by third-parties to serve advertisements and to the <a href="https://iosef.org/terms.html">Terms of Use</a>, including the <a href="https://iosef.org/terms.html#privacy">privacy policy</a>. If you disagree with these terms, leave this website and delete its data from your browser. This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. Electoral communications on this website (if any) are authorised by Joseph Mann, Canberra ACT.</span>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

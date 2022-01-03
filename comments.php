@@ -10,6 +10,9 @@
  * @package M3
  */
 
+
+ /* NOTHING STARTING FROM THIS LINE SHOULD BE LOADED ON IOSEF.ORG */
+
 /*
  * If the current post is protected by a password and
  * the visitor has not yet entered the password we will
@@ -32,13 +35,13 @@ if ( post_password_required() ) {
 			if ( '1' === $m3_comment_count ) {
 				printf(
 					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'm3' ),
+					esc_html__( 'One comment on &ldquo;%1$s&rdquo;', 'm3' ),
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			} else {
 				printf( 
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $m3_comment_count, 'comments title', 'm3' ) ),
+					esc_html( _nx( '%1$s comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', $m3_comment_count, 'comments title', 'm3' ) ),
 					number_format_i18n( $m3_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
