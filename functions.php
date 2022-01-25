@@ -179,6 +179,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 // Stop emoji script from loading - Credit: Ryan Heller, GPL2, https://wordpress.org/plugins/disable-emojis/
+// Code from rev 2580406
 
 /**
  * Disable the emoji's
