@@ -26,7 +26,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'm3' ); ?></a>
 
-	<div onload="check" id=cookieconsent>By using this website you consent to the Terms of Use and the privacy policy, including the use of third party cookies. <a href='<?php echo get_stylesheet_directory_uri() . "/inc/terms.html";?>'>Learn more here.</a> <button onclick="" </div>
+	<div id=cookieconsent>By using this website you consent to the Terms of Use and the privacy policy, including the use of third party cookies. <a href='<?php echo get_stylesheet_directory_uri() . "/inc/terms.html";?>'>Learn more here.</a> <button onclick="cookieConsentClose()">Close</button></div>
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
