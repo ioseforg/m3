@@ -25,3 +25,4 @@ You can enable a special post layout for YouTube video posts by setting the cust
 - Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 - normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2018 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
 - Disable Emojis, (c) 2015/2021 Ryan Hellyer, [GPL2](https://www.gnu.org/licenses/gpl-2.0.html)
+- PT Fonts, (c) 2009-10 Paratype, [SIL OFL](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=ofl)
