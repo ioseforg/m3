@@ -434,6 +434,14 @@ p {
 	margin-bottom: 1.5em;
 }
 
+p.homepage-title-smaller-gap {
+	margin-bottom: 0;
+}
+
+p.no-para-margin {
+	margin:0;
+}
+
 dfn,
 cite,
 em,
@@ -578,6 +586,14 @@ object {
 img {
 	height: auto;
 	max-width: 100%;
+}
+
+img.wp-post-image {
+		clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.5em;
 }
 
 figure {
